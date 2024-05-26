@@ -7,6 +7,7 @@ IP = '127.0.0.1'
 PORT = 12345
 ALLOWED_KEYS_FILE = "allowed_keys.txt"
 b = 123
+
 def load_allowed_keys():
     with open(ALLOWED_KEYS_FILE, "r") as file:
         return [int(line.strip()) for line in file]

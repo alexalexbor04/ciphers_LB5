@@ -23,7 +23,6 @@ def main():
         conn, addr = sock.accept()
 
         while True:
-            #на этом этапе "Hello, server!" не доходит до сервера
             msg = conn.recv(4096)
             data = pickle.loads(msg)
 

@@ -17,6 +17,8 @@ def main():
     diff_hel = DiffHel(ab=a, p=p, g=g)
     A = diff_hel.calculate_key
 
+    print(A)
+
     with open("client_public_key.txt", "w") as file:
         file.write(str(A))
 
@@ -37,5 +39,4 @@ def main():
 
     sock.close()
 
-if __name__ == "main":
-    main()
+main()
